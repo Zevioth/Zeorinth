@@ -1,0 +1,76 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Download File</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: #f5f6f8;
+      font-family: Arial, sans-serif;
+    }
+
+    .download-btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      padding: 15px 28px;
+      background: #173d78;
+      color: white;
+      text-decoration: none;
+      font-size: 15px;
+      font-weight: 600;
+      border-radius: 10px;
+      transition: background 0.2s, transform 0.2s;
+    }
+
+    .download-btn:hover {
+      background: #2456a0;
+      transform: translateY(-2px);
+    }
+
+    .download-btn:active {
+      transform: scale(0.97);
+    }
+
+    .download-btn svg {
+      width: 19px;
+      height: 19px;
+      fill: none;
+      stroke: currentColor;
+      stroke-width: 2;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+    }
+  </style>
+</head>
+
+<body>
+
+  <a
+    class="download-btn"
+    href="https://drive.google.com/file/d/13QsNl0MtDB0IfuneyEaix1SK8RRQJ_N_/view?usp=drivesdk"
+    target="_blank"
+    rel="noopener noreferrer"
+  >
+    <svg viewBox="0 0 24 24">
+      <path d="M12 3v12m-5-5 5 5 5-5"/>
+      <path d="M5 17v3h14v-3"/>
+    </svg>
+    Download Now
+  </a>
+
+</body>
+</html>
